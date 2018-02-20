@@ -1,0 +1,7 @@
+<h1>Sell ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{ coinInfo.coinValue }}.00</p>
+<p>Number of ShintoCoins Owned: {{ coinInfo.coinsEarned }}</p>
+<form (submit) = "sellCoins()">
+    <input type="text" placholder = "Amount to sell" name = "coinsToSell" [(ngModel)] = "coinsToSell">
+    <input type="submit" value = "Sell">
+</form>
